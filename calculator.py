@@ -6,19 +6,16 @@ class Calculator:
 
     def subtract(self, a: float, b: float) -> float:
         """Возвращает разность двух чисел (a - b)."""
-        # БАГ ДЛЯ СТУДЕНТОВ: Неверный порядок вычитания
-        return b - a
+        return a - b
 
     def multiply(self, a: float, b: float) -> float:
         """Возвращает произведение двух чисел."""
-        # БАГ ДЛЯ СТУДЕНТОВ: Захардкоженный результат
-        return 4.0
+        return a * b
 
     def divide(self, a: float, b: float) -> float:
         """Возвращает частное от деления a на b.
         При делении на ноль должен выбрасывать ValueError.
         """
-        # БАГ ДЛЯ СТУДЕНТОВ: Вместо исключения возвращаем 0
         if b == 0:
-            return 0.0
+            raise ValueError("Деление на ноль недопустимо")
         return a / b
