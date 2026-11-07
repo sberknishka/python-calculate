@@ -16,6 +16,6 @@ class Calculator:
         """Возвращает частное от деления a на b.
         При делении на ноль должен выбрасывать ValueError.
         """
-        #if b == 0:
-            #raise ValueError("Деление на ноль недопустимо")
-        #return a / b
+        if b == 0:
+            raise ValueError("Деление на ноль недопустимо")
+        return a / b
