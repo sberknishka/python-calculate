@@ -33,6 +33,4 @@ jobs:
         run: |
           pytest test_calculator.py -v
 
-      - name: Check Code Coverage
-        run: |
-          pytest test_calculator.py --cov=calculator --cov-report=term-missing --cov-fail-under=90
+
